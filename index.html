@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deepraj</title>
+    <meta name="description" content="Exyte is a team of full-stack programmers and designers focused on mobile development, smart contract technology, and virtual reality.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+ 
+    
+    <style>
+        .bg{
+            background: url('./img/Screenshot\ 2024-05-14\ 090331.png');
+            background-repeat: no-repeat;
+            background-size:cover;
+            /* position: absolute; */
+        }
+        @media(max-width: 768px){
+            .bg{
+                background: none;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="bg" id="first">
+        <header id="site-header">
+            <div class="header__logo">
+                <a class="header__logo-link" href="/">
+          <!-- <img  src="/img/logo-beige.svg" height="24" width="84" alt="logo"/> -->
+          <p style="color: #cec0ad;">DEEPRAJ </p>
+        </a>
+            </div>
+            <div class="header__menu">
+                <a class="header__menu-link" href="/">Home</a>
+                <a class="header__menu-link" href="/portfolio">Projects</a>
+                <a class="header__menu-link" href="/contacts">Contacts</a>
+                <div style="flex-grow: 1;"></div>
+                <div class="header__mobile-buttons">
+                    <button class="header-footer__button header-footer__button--letter" onclick="showModal()">
+            <div class="header-footer__arrow ">
+              <img class="arrow" src="/img/arrow-right-up.svg" alt="arrow"/>
+            </div>
+            Send a letter
+          </button>
+                    <a class="header-footer__button header-footer__button--call" href="https://calendly.com/exyte/30min" target="_blank">
+                        <div class="header-footer__arrow ">
+                            <img class="arrow" src="/img/arrow-right-up.svg" alt="arrow" />
+                        </div>
+                        Schedule a call
+                    </a>
+                </div>
+            </div>
+            <div class="header__button-wrapper">
+                <button class="header__button header__button--mobile" onclick="showMobileMenu()">MENU</button>
+                <button class="header__button header__button--close" onclick="showMobileMenu()">CLOSE</button>
+                <button class="header__button header__button--desktop" onclick="showModal()">GET IN TOUCH</button>
+            </div>
+        </header>
+        <div class="main-first">
+            <a class="main-github main-first--invisible" href="https://github.com/deepraj21" target="_blank">
+                <div class="main-github__block">
+                    <img src="/img/github.svg" width="16" height="16" alt="github logo" />
+                    <div class="main-github__text">GITHUB</div>
+                </div>
+                <div class="main-github__block">
+                    <img src="https://www.svgrepo.com/show/330828/leetcode.svg" width="16" height="16" alt="github logo" />
+                    <div class="main-github__text">LEETCODE</div>
+                </div>
+            </a>
+            <div class="main-first__hero-text">the best <br><span style="background-color: rgb(255, 255, 255);">ⓘ error message</span><br>is the one that <br>never shows up</div>
+            <div class="main-first__text main-first--invisible">Hello there! I'm Deepraj, BTech student majoring in CS 💻 Engg at KIIT University.
+            </div>
+        </div>
+    </div>
+    <div class="main-repos main-container" id="repos">
+        <div class="main-repos__title"><span class="main__title-slash">//</span> Public repositories on our GitHub <a class="main-repos__link main__title-link" href="https://github.com/exyte" target="_blank">Visit_   </a>
+        </div>
+        <div class="main-repos__list">
+            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;Macaw" target="_blank">
+                <div class="main-repos__name"><span>Macaw</span></div>
+                <div class="main-repos__description">Powerful and easy-to-use vector graphics Swift library with SVG support</div>
+                <div class="main-repos__stars">5,924</div>
+                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            </a>
+            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;PopupView" target="_blank">
+                <div class="main-repos__name"><span>PopupView</span></div>
+                <div class="main-repos__description">Toasts and popups library written with SwiftUI</div>
+                <div class="main-repos__stars">2,374</div>
+                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            </a>
+            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;SVGView" target="_blank">
+                <div class="main-repos__name"><span>SVGView</span></div>
+                <div class="main-repos__description">SVG parser and renderer written in SwiftUI</div>
+                <div class="main-repos__stars">382</div>
+                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            </a>
+            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;Grid" target="_blank">
+                <div class="main-repos__name"><span>Grid</span></div>
+                <div class="main-repos__description">The most powerful Grid container missed in SwiftUI</div>
+                <div class="main-repos__stars">1,404</div>
+                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            </a>
+            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;ActivityIndicatorView" target="_blank">
+                <div class="main-repos__name"><span>ActivityIndicatorView</span></div>
+                <div class="main-repos__description">A number of preset loading indicators created with SwiftUI</div>
+                <div class="main-repos__stars">1,107</div>
+                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            </a>
+            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;ScalingHeaderScrollView" target="_blank">
+                <div class="main-repos__name"><span>ScalingHeaderScrollView</span></div>
+                <div class="main-repos__description">A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI</div>
+                <div class="main-repos__stars">602</div>
+                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            </a>
+        </div>
+    </div>
+    <div class="main-culture main-container" id="culture">
+        <div class="main-culture__line"></div>
+        <div class="main-culture__title"><span class="main__title-slash">//</span> Engineering culture</div>
+        <div class="main-culture__items">
+            <div class="main-culture__item">
+                <div class="main-culture__type">{ type: <span>‘communication_and_flexibility_are_integral’</span> }</div>
+                <div class="main-culture__description">The Agency stands by the statement that communication is a two-way street. Both, the Client’s and Exyte’s specialists, are accessible during the agreed upon working hours. The Agency provides systematic updates, while the Client gives
+                    timely feedback. This ethics of mutual respect help foster procedural flexibility to ensure a proper result.</div>
+                <div class="main-culture__image">
+                    <img src="/img/culture/culture 1.png" alt="image" loading="lazy" width="390" height="290" />
+                </div>
+                <div class="main-culture__mobile-line"></div>
+            </div>
+            <div class="main-culture__item">
+                <div class="main-culture__type">{ type: <span>‘conscientiousness’</span> }</div>
+                <div class="main-culture__description">The Agency commits to provide the application fully corresponding to the guidelines of the publishing platform, be it App Store or Play Market. This includes the development process, integration of third-party services, user-specific design,
+                    and assistance in publishing the application to stores.</div>
+                <div class="main-culture__image">
+                    <img src="/img/culture/culture 2.png" alt="image" loading="lazy" width="390" height="290" />
+                </div>
+                <div class="main-culture__mobile-line"></div>
+            </div>
+            <div class="main-culture__item">
+                <div class="main-culture__type">{ type: <span>‘essential_proactivity’</span> }</div>
+                <div class="main-culture__description">The Project is a common cause, and the Agency bares equal resposibility for the outcome, meaning that Exyte may bring forward ideas that contradict the original strategy but will benefit the final result.</div>
+                <div class="main-culture__image">
+                    <img src="/img/culture/culture 3.png" alt="image" loading="lazy" width="390" height="290" />
+                </div>
+                <div class="main-culture__mobile-line"></div>
+            </div>
+            <div class="main-culture__last">
+            </div>
+        </div>
+    </div>
+    <div class="main-process main-container" id="process">
+        <div class="main-process__title"><span class="main__title-slash">//</span> Development process</div>
+        <div class="main-process__item">
+            <div class="main-process__item-left">
+                <div class="main-process__stage">( 01 )</div>
+                <div class="main-process__name">Staff Augmentation</div>
+                <div class="main-process__description">The Client gains access to a pool of highly skilled and experienced mobile app developers. The hourly rate for development starts at $60.
+                </div>
+                <div class="main-process__subtitle">When to choose it</div>
+                <div class="main-process__list">
+                    <div class="main-process__list-item">Client has a tech team they want to augment;</div>
+                    <div class="main-process__list-item">Client needs a professional with specific experience.</div>
+                </div>
+                <div class="main-process__subtitle">How it works</div>
+                <div class="main-process__tags">
+                    <div class="main-process__tag"><span class="main-process__number">01</span>_Talent selection</div>
+                    <div class="main-process__tag"><span class="main-process__number">02</span>_Interviews</div>
+                    <div class="main-process__tag"><span class="main-process__number">03</span>_Integration</div>
+                    <div class="main-process__tag"><span class="main-process__number">04</span>_Test period</div>
+                    <div class="main-process__tag"><span class="main-process__number">05</span>_Development and support
+                    </div>
+                </div>
+                <a href="/development-team-augmentation" class="main-process__link main__title-link">read more_   </a>
+            </div>
+            <div class="main-process__image-wrapper">
+                <img src="/img/development-process-1.png" alt="" class="main-process__image">
+            </div>
+        </div>
+        <div class="main-process__item">
+            <div class="main-process__item-left">
+                <div class="main-process__stage">( 02 )</div>
+                <div class="main-process__name">End-to-End Mobile Development</div>
+                <div class="main-process__description">A comprehensive solution that covers every aspect of mobile app development.
+                </div>
+                <div class="main-process__subtitle">When to choose it</div>
+                <div class="main-process__list">
+                    <div class="main-process__list-item">Client has a project at any stage (from conception to an existing one);
+                    </div>
+                    <div class="main-process__list-item">Client doesn’t have an internal tech team;</div>
+                    <div class="main-process__list-item">Client wants to focus on business development and offload the technical side of the project to the Agency.
+                    </div>
+                </div>
+                <div class="main-process__subtitle">How it works</div>
+                <div class="main-process__tags">
+                    <div class="main-process__tag"><span class="main-process__number">01</span>_discovery</div>
+                    <div class="main-process__tag"><span class="main-process__number">02</span>_design</div>
+                    <div class="main-process__tag"><span class="main-process__number">03</span>_incremental delivery</div>
+                    <div class="main-process__tag"><span class="main-process__number">04</span>_publishing</div>
+                    <div class="main-process__tag"><span class="main-process__number">05</span>_support</div>
+                </div>
+                <a href="/end-to-end-mobile-development" class="main-process__link main__title-link">read more_   </a>
+            </div>
+            <div class="main-process__image-wrapper">
+                <img src="/img/development-process-2.png" alt="" class="main-process__image">
+            </div>
+        </div>
+    </div>
+    <div class="main-knowledge main-container" id="knowledge">
+        <div class="main-knowledge__title"><span class="main__title-slash">//</span> Knowledge base<a class="main-knowledge__link main__title-link" href="/blog">see all_   </a></div>
+        <div class="main-knowledge__items">
+            <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;water-level-widget">
+                <div class="main-knowledge__icon"><img src="/img/memoji/AYudenkov.png" alt="icon" loading="lazy" width="24" height="24" /></div>
+                <div class="main-knowledge__text">Android Department • 11 Jan 2023</div>
+                <div class="main-knowledge__name">Jetpack Compose Tutorial: Water Level Widget</div>
+                <div class="main-knowledge__description">Replicating the depth gauge widget from Apple in Jetpack Compose</div>
+            </a>
+            <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;swiftui-tutorial-scaling-header">
+                <div class="main-knowledge__icon"><img src="/img/memoji/NAfonasov.png" alt="icon" loading="lazy" width="24" height="24" /></div>
+                <div class="main-knowledge__text">iOS Department • 9 Jun 2022</div>
+                <div class="main-knowledge__name">SwiftUI Tutorial – Scaling Header</div>
+                <div class="main-knowledge__description">A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI.</div>
+            </a>
+            <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;swiftui-tutorial-popupview-library">
+                <div class="main-knowledge__icon"><img src="/img/memoji/NAfonasov.png" alt="icon" loading="lazy" width="24" height="24" /></div>
+                <div class="main-knowledge__text">iOS Department • 1 Feb 2022</div>
+                <div class="main-knowledge__name">SwiftUI Tutorial — a simple interactive popup</div>
+                <div class="main-knowledge__description">Toast and popup library written in SwiftUI.</div>
+            </a>
+            <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;android-dribbble-replicating-part-5">
+                <div class="main-knowledge__icon"><img src="/img/memoji/SBobrishev.png" alt="icon" loading="lazy" width="24" height="24" /></div>
+                <div class="main-knowledge__text">Android Department • 20 Mar 2023</div>
+                <div class="main-knowledge__name">Jetpack Compose Tutorial: Improving Performance</div>
+                <div class="main-knowledge__description">Improving Jetpack Compose performance with Compose Compiler Metrics</div>
+            </a>
+            <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;how-to-create-app-clips">
+                <div class="main-knowledge__icon"><img src="/img/memoji/DShipinev.png" alt="icon" loading="lazy" width="24" height="24" /></div>
+                <div class="main-knowledge__text">iOS Department • 26 Mar 2021</div>
+                <div class="main-knowledge__name">How to Create Widgets with WidgetKit</div>
+                <div class="main-knowledge__description">With WidgetKit The new WidgetKit framework made widgets more accessible, interactive and increa...</div>
+            </a>
+            <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;how-to-create-app-clips">
+                <div class="main-knowledge__icon"><img src="/img/memoji/DShipinev.png" alt="icon" loading="lazy" width="24" height="24" /></div>
+                <div class="main-knowledge__text">iOS Department • 11 Feb 2020</div>
+                <div class="main-knowledge__name">How to Create App Clips</div>
+                <div class="main-knowledge__description">With the iOS 14 release Apple added a new way to experience your app&#39;s features called App Clips.</div>
+            </a>
+        </div>
+    </div>
+    <div class="main-projects main-container" id="projects">
+        <div class="main-projects__title"><span class="main__title-slash">//</span> Featured projects <a class="main-projects__link main__title-link" href="/portfolio">see all_   </a></div>
+        <div class="main-projects__table">
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;umake-3d-modeling-cad-design&#x2F;id1042246861" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/apple-appstore.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">uMake</div>
+                <div class="main-projects__hashtag">#Design_&amp;_Creativity</div>
+                <div class="main-projects__technologies">Swift, SceneKit</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">uMake</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/uMake_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/uMake.png" />
+                </div>
+            </a>
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;airmeasure-ar-tape-ruler&#x2F;id1251282152" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/apple-appstore.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">AirMeasure</div>
+                <div class="main-projects__hashtag">#Industrial_measurement</div>
+                <div class="main-projects__technologies">Swift, ARKit, Viper</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">AirMeasure</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/AirMeasure_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/AirMeasure.png" />
+                </div>
+            </a>
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;linktr.ee&#x2F;roveworldapp" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/google-play.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">RoveWorld</div>
+                <div class="main-projects__hashtag">#Crypto</div>
+                <div class="main-projects__technologies">SwiftUI, Solana, NFT</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">RoveWorld</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/rove_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/rove.png" />
+                </div>
+            </a>
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;workoutlabs-fit-fitness-log&#x2F;id1470198432" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/apple-appstore.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">WorkoutLabs</div>
+                <div class="main-projects__hashtag">#Fitness</div>
+                <div class="main-projects__technologies">Swift, UIKit, Lottie</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">WorkoutLabs</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/workoutlabs_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/workoutlabs.png" />
+                </div>
+            </a>
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;voicely-make-friends-and-talk&#x2F;id1567907593" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/apple-appstore.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">Voicely</div>
+                <div class="main-projects__hashtag">#Social_Network</div>
+                <div class="main-projects__technologies">Swift, UIKit, CallKit</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">Voicely</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/voicely_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/voicely.png" />
+                </div>
+            </a>
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id&#x3D;com.hesonline.woa" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/google-play.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">Work of Art</div>
+                <div class="main-projects__hashtag">#Mental_health</div>
+                <div class="main-projects__technologies">Kotlin, Android Jetpack, RxKotlin</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">Work of Art</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/workofart_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/workofart.png" />
+                </div>
+            </a>
+            <a class="main-projects__row" href="https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;micro-skills&#x2F;id1407179795" target="_blank">
+                <div class="main-projects__icon">
+                    <svg>
+                        <use href="/img/apple-appstore.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="main-projects__name">Micro-Skills</div>
+                <div class="main-projects__hashtag">#B2B</div>
+                <div class="main-projects__technologies">Swift, UI animation library</div>
+                <div class="main-projects__window">
+                    <div class="main-projects__window-title">Micro-Skills</div>
+                    <img class="main-projects__window-image" alt="ascii image" src="/img/projects/micro-skills_ascii.png" loading="lazy" />
+                    <img class="main-projects__window-image main-projects__window-image-color" alt="image" loading="lazy" src="/img/projects/micro-skills.png" />
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="main-app main-container" id="app">
+        <div class="main-app__wrapper">
+            <div class="main-app__left">
+                <div class="main-app__title"><span class="main__title-slash">//</span> Get to know Exyte</div>
+                <div class="main-app__description">Now in <span class="main-app__description--blue">_native iOS_</span>! Find out how we work, what our clients say about us, and try out interactive demos of our most popular open-source libraries
+                </div>
+                <div class="main-app__links">
+                    <a class="main-app__link" href="https://apps.apple.com/dk/app/exyte/id6478858479" target="_blank">
+                    <img src="/img/qr-apple.png" alt="qr" class="main-app__link-img"/>
+                    <img src="/img/logo-apple.png" alt="logo" class="main-app__link-img-mobile"/>
+                    <div class="main-app__link-first">download on the</div>
+                    <div class="main-app__link-second">App Store</div>
+                </a>
+                 
+                </div>
+            </div>
+            <img class="main-app__image" src="/img/mobile-app.png" alt="mobile app" />
+        </div>
+    </div>
+    <div class="main-team main-container" id="team">
+        <div class="main-team__title"><span class="main__title-slash">//</span> Team</div>
+        <div class="main-team__item">
+            <div class="main-team__name">iOS Department</div>
+            <div class="main-team__description">The department is defined by an in-depth understanding of how to build and customize apps in the iOS ecosystem. A recent postcard swap has shown that all of them have terrible handwriting.</div>
+            <div class="main-team__stats">
+                <div class="main-team__stat-name">Lines of code written: <span class="main-team__stat-number">(6 584 125);</span>
+                </div>
+                <div class="main-team__stat-name">Apple watches worn down: <span class="main-team__stat-number">(12);</span>
+                </div>
+            </div>
+            <div class="main-team__faces">
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/NAfonasov.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/NAfonasov.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/JMolochaeva.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/JMolochaeva.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/DObuhov.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/DObuhov.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/DShipinev.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/DShipinev.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/NTru.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/NTru.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/NShmelev.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/NShmelev.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/AEryomenko.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/AEryomenko.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/DShonin.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/DShonin.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/DGimmelbrodskaya.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/DGimmelbrodskaya.mp4" type="video/mp4">
+                            </video>
+                </div>
+            </div>
+        </div>
+        <div class="main-team__item">
+            <div class="main-team__name">Android Department</div>
+            <div class="main-team__description">The team adheres zealously to the principles of clean architecture, have in-depth knowledge of Android application development, and a solid grasp of the reactive approach to programming. Blue M&amp;Ms are the team&#39;s go-to snack.</div>
+            <div class="main-team__stats">
+                <div class="main-team__stat-name">Lines of code written: <span class="main-team__stat-number">(30 841 957);</span>
+                </div>
+                <div class="main-team__stat-name">Stairs climbed: <span class="main-team__stat-number">(86 574);</span>
+                </div>
+            </div>
+            <div class="main-team__faces">
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/SBobrischev.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/SBobrischev.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/AYudenkov.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/AYudenkov.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/YStrot.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/YStrot.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/Alieva.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/Alieva.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/PEgorova.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/PEgorova.mp4" type="video/mp4">
+                            </video>
+                </div>
+            </div>
+        </div>
+        <div class="main-team__item">
+            <div class="main-team__name">Frontend and Blockchain Department</div>
+            <div class="main-team__description">Just 14 words: solid smart contract proficiency and a consistent track record of solving critical engineering problems. Also, they all have a computer science degree, save for one very clever Master of Science in Physics.</div>
+            <div class="main-team__stats">
+                <div class="main-team__stat-name">Lines of code written: <span class="main-team__stat-number">(214 769 783);</span>
+                </div>
+                <div class="main-team__stat-name">DnD-games-played: <span class="main-team__stat-number">(4);</span>
+                </div>
+            </div>
+            <div class="main-team__faces">
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/DHalin.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/DHalin.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/PVdovina.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/PVdovina.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/EShteinikova.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/EShteinikova.mp4" type="video/mp4">
+                            </video>
+                </div>
+                <div class="main-team__face">
+                    <img class="main-team__face-poster" src="/img/faces/IZapletnev.jpg" alt="poster" />
+                    <video loop muted disableRemotePlayback playsinline disablePictureInPicture preload="none">
+                                <source src="/img/faces/IZapletnev.mp4" type="video/mp4">
+                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-reviews main-container" id="reviews">
+            <div class="main-reviews__title"><span class="main__title-slash">//</span> Reviews</div>
+            <div class="main-reviews__items">
+                <div class="main-reviews__item">
+                    <div class="main-reviews__first">
+                        <div class="main-reviews__stars">
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                        </div>
+                        <div class="main-reviews__content">They&#39;re a top-notch firm that offers a lot of value. Exyte’s does a great job, executing on tasks well. We passed the torch to their frontend developer and he executed on that project well. Everyone loves our app. Their team
+                            helps us to consider high-level concepts. They’re more hungry for those discussions than we are.</div>
+                    </div>
+                    <div class="main-reviews__second">
+                        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;paul-lintilhac-568a1b3a&#x2F;" target="_blank" class="main-reviews__user-link">linkedin</a>
+                        <div class="main-reviews__name">Paul Lintilhac, Co-founder</div>
+                        <div class="main-reviews__company">Trace, Blockchain regulatory platform, the Vermont Agency of Agriculture, Food &amp; Markets contractor</div>
+                    </div>
+                </div>
+                <div class="main-reviews__item">
+                    <div class="main-reviews__first">
+                        <div class="main-reviews__stars">
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                        </div>
+                        <div class="main-reviews__content">Communication and their ability to meet deadlines is excellent. They don’t hesitate to interject what they think the best practice should be. Sometimes, other companies will implement things just because we told them to, even if
+                            it’s not the best way to do it. Exyte is thoughtful enough to let us know if there is a better strategy.</div>
+                    </div>
+                    <div class="main-reviews__second">
+                        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;jarem-archer-0626908b&#x2F;" target="_blank" class="main-reviews__user-link">linkedin</a>
+                        <div class="main-reviews__name">Jarem Archer, Director of Technology</div>
+                        <div class="main-reviews__company">Pool leak repair company with 11 branches in Florida</div>
+                    </div>
+                </div>
+                <div class="main-reviews__item">
+                    <div class="main-reviews__first">
+                        <div class="main-reviews__stars">
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                        </div>
+                        <div class="main-reviews__content">We give Exyte our ideas, and they provide us with business analytics, design, and coding services. They’re fast and high-quality software developers, which is very rare to find. Their interaction with us is straightforward and
+                            distinctive, and they have a good process. Also, Exyte helps us understand everything business-wise, and we like that we don’t have to worry about the technical side. They transform our ideas into code and friendly UX for the
+                            users.</div>
+                    </div>
+                    <div class="main-reviews__second">
+                        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;alexmalshakov&#x2F;" target="_blank" class="main-reviews__user-link">linkedin</a>
+                        <div class="main-reviews__name">Alex Mallone, Founder</div>
+                        <div class="main-reviews__company">Investment company focused on technology entrepreneurship</div>
+                    </div>
+                </div>
+                <div class="main-reviews__item">
+                    <div class="main-reviews__first">
+                        <div class="main-reviews__stars">
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                        </div>
+                        <div class="main-reviews__content">I’m really happy with the quality of their work. Exyte has become a solid extension of our team. We&#39;re always looking for vendors to partner up but are quite picky. Working with the Exyte team has been a true pleasure. We manage
+                            the development process on our side, they follow it easily, never miss a deadline, and consistently deliver on time.</div>
+                    </div>
+                    <div class="main-reviews__second">
+                        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;victor-shilo&#x2F;" target="_blank" class="main-reviews__user-link">linkedin</a>
+                        <div class="main-reviews__name">Victor Shilo, CTO</div>
+                        <div class="main-reviews__company">Eastbanc Technologies, honoree of Fast Company’s 2022 World Changing Ideas Awards</div>
+                    </div>
+                </div>
+                <div class="main-reviews__item">
+                    <div class="main-reviews__first">
+                        <div class="main-reviews__stars">
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                        </div>
+                        <div class="main-reviews__content">External feedback regarding the UI components has been positive. Exyte is skilled in their field. They’re professional, communicative, and transparent. Their detail-oriented approach supplemented their professional management style.
+                            Customers can expect a hands-on and creative team.</div>
+                    </div>
+                    <div class="main-reviews__second">
+                        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;evimyr&#x2F;" target="_blank" class="main-reviews__user-link">linkedin</a>
+                        <div class="main-reviews__name">Evi Meyer, CEO</div>
+                        <div class="main-reviews__company">3D Sketch App, AppStore Editor&#39;s Choice</div>
+                    </div>
+                </div>
+                <div class="main-reviews__item">
+                    <div class="main-reviews__first">
+                        <div class="main-reviews__stars">
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                            <div class="main-reviews__star"></div>
+                        </div>
+                        <div class="main-reviews__content">Exyte not only completed the app, which has been downloaded 60,000 times, but also improved upon the existing version and the original specifications. Timely and communicative, the team displays excellent project management skills.
+                            Their high-caliber work secures an ongoing partnership.</div>
+                    </div>
+                    <div class="main-reviews__second">
+                        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;williamartamon&#x2F;" target="_blank" class="main-reviews__user-link">linkedin</a>
+                        <div class="main-reviews__name">William Artamon, Founder</div>
+                        <div class="main-reviews__company">Workoutlabs, Fitness app with 150 000 downloads</div>
+                    </div>
+                </div>
+                <button class="main-reviews__more" onclick="showMoreReviews();">show more</button>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="main-footer__call-to-action"></div>
+            <div class="main-footer__image">
+                <div class="main-footer__block">
+                    <div class="main-footer__title"><span class="main__title-slash">//</span> Discuss your project</div>
+                    <div class="main-footer__description">The Agency only provides a quote after a
+                        <span class="main-footer__description--color">_thorough interview_</span>. Exyte
+                        <span class="main-footer__description--color">_managers will contact_</span> you for more details using the preferred method of communication.
+                    </div>
+                    <button class="main-footer__button main-footer__button--letter" onclick="showModal()">
+                    <div class="main-footer__arrow ">
+                        <img class="arrow" src="/img/arrow-right-up.svg" alt="arrow"/>
+                    </div>
+                    Send a letter
+                </button>
+                    <a class="main-footer__button main-footer__button--call" href="https://calendly.com/exyte/30min" target="_blank">
+                        <div class="main-footer__arrow ">
+                            <img class="arrow" src="/img/arrow-right-up.svg" alt="arrow" />
+                        </div>
+                        Schedule a call
+                    </a>
+                </div>
+                <footer class="footer">
+                    <div class="footer__copyright">© Exyte 2023</div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="https://twitter.com/exytehq" target="_blank">twitter</a>
+                        <a class="footer__link" href="https://github.com/exyte" target="_blank">github</a>
+                        <a class="footer__link" href="https://clutch.co/profile/exyte#summary" target="_blank">clutch</a>
+                        <a class="footer__link" href="mailto:hello@exyte.com" target="_blank">email</a>
+                    </div>
+                    <a class="footer__back" href="#first"><span class="footer__back-word">back to </span>top
+                <div class="footer__back-arrow">
+                  <img class="arrow" src="/img/arrow-right.svg" alt="arrow"/>
+                </div>
+              </a>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="main-nav">
+        <div class="main-nav__items">
+            <a class="main-nav__item main-nav__item--active" href="#first"><span>></span><span>!</span> main</a>
+            <a class="main-nav__item" href="#repos"><span>></span><span>!</span> Repositories</a>
+            <a class="main-nav__item" href="#culture"><span>></span><span>!</span> Culture</a>
+            <a class="main-nav__item" href="#process"><span>></span><span>!</span> Process</a>
+            <a class="main-nav__item" href="#knowledge"><span>></span><span>!</span> Knowledge base</a>
+            <a class="main-nav__item" href="#projects"><span>></span><span>!</span> Projects</a>
+            <a class="main-nav__item" href="#team"><span>></span><span>!</span> Team</a>
+            <!-- <a class="main-nav__item" href="#reviews"><span>></span><span>!</span> Reviews</a> -->
+        </div>
+    </div>
+    <div class="main-modal">
+        <button class="main-modal__header">
+        <img class="main-modal__header-img" src="/img/send-a-letter.svg"
+             alt="send a letter" onclick="showModal()">
+        <img class="main-modal__header-img--small" src="/img/send-a-letter-small.svg"
+             alt="send a letter" onclick="showModal()">
+    </button>
+        <div class="main-modal__form-sent">
+            <img class="main-modal__form-sent-img" src="/img/sent.png" alt="sent image" loading="lazy" />
+            <div class="main-modal__form-sent-title">Thank you for<br> contacting us!</div>
+            <div class="main-modal__form-sent-text">Your request has been sent, please wait for a response.</div>
+            <button class="main-modal__button" type="button" onclick="closeModal()">GREAT</button>
+        </div>
+        <form class="main-modal__form" id="sendForm">
+            <div class="main-modal__title">Send a letter</div>
+            <label class="main-modal__block" data-name="email">
+            <div class="main-modal__label">E-mail</div>
+            <input class="main-modal__input" type="email" name="email"/>
+            <div class="main-modal__error">*This is a required field</div>
+        </label>
+            <label class="main-modal__block">
+            <div class="main-modal__label">Budget</div>
+            <input class="main-modal__input" name="budget"/>
+        </label>
+            <label class="main-modal__block">
+            <div class="main-modal__label">Required expertise</div>
+            <input class="main-modal__input" name="requiredExpertise"/>
+        </label>
+            <label class="main-modal__block">
+            <div class="main-modal__label">Other details and questions</div>
+            <textarea class="main-modal__textarea" name="otherDetails"></textarea>
+        </label>
+            <label class="main-modal__checkbox">
+            <input type="checkbox" name="isAgreed">
+            <span class="check__box"></span>
+            <span>I agree to Exyte’s Terms of use and user's agreements</span>
+        </label>
+            <button class="main-modal__button main-modal__button--disabled" type="button" id="sendButton">submit</button>
+        </form>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/common.js"></script>
+</body>
+
+</html>
