@@ -619,9 +619,9 @@
         display: none;
     }
     .main-culture {
-        margin-top: 80px;
-        margin-bottom: 450px;
-        height: 1320px;
+        /* margin-top: 80px; */
+        /* margin-bottom: 450px; */
+        height: 500px;
     }
     .main-culture__block {
         margin-bottom: 40px;
@@ -685,148 +685,6 @@
         margin-bottom: 60px;
 }
 
-.main-process__title {
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    letter-spacing: -0.03em;
-    color: var(--beige);
-    margin-bottom: 60px;
-}
-
-.main-process__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    background-color: var(--gray1);
-    margin-bottom: 40px;
-    padding: 20px;
-    height: 600px;
-}
-
-.main-process__item-left {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 28px;
-    padding-left: 20px;
-}
-
-.main-process__stage {
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-bottom: 8px;
-}
-
-.main-process__name {
-    font-size: 24px;
-    line-height: 34px;
-    letter-spacing: -0.03em;
-    color: var(--beige);
-    margin-bottom: 20px;
-}
-
-.main-process__description {
-    font-family: 'IBM Plex Mono', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
-    color: var(--beige);
-    opacity: 0.8;
-}
-
-.main-process__subtitle {
-    grid-area: stage;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-top: 24px;
-    margin-bottom: 16px;
-}
-
-.main-process__list-item {
-    font-family: 'IBM Plex Mono', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.03em;
-    color: var(--beige);
-    opacity: 0.8;
-    padding-left: 24px;
-    position: relative;
-}
-
-.main-process__list-item::before {
-    content: "";
-    background-image: url("../img/next.svg");
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    left: 0;
-    top: 2px;
-}
-
-.main-process__list-item:not(:last-of-type) {
-    margin-bottom: 8px;
-}
-
-.main-process__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--beige);
-}
-
-.main-process__tag {
-    padding: 4px 6px;
-    border: 1px solid var(--camel);
-    border-radius: 3px;
-}
-
-.main-process__number {
-    color: var(--green);
-}
-
-.main-process__link {
-    color: var(--red);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-left: 0;
-    margin-top: auto;
-}
-
-.main-process__image-wrapper {
-    background-color: var(--gray2);
-    background-image: url("/img/development-process-bg.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-process__image {
-    height: 347px;
-    width: 347px;
-    object-fit: cover;
-}
-
 @media (max-width: 1210px) {
     .main-process__item {
         height: 660px;
@@ -875,10 +733,6 @@
         width: 343px;
     }
 }
-
-/*</editor-fold>*/
-
-/*<editor-fold desc="Main Knowledge">*/
 
 .main-knowledge {
     margin-top: 180px;
