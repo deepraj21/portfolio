@@ -1,34 +1,4 @@
-//for footer main nav
-const mainNav = document.querySelector(".main-nav");
-const mainNavLi = document.querySelectorAll(".main-nav__item");
-const reviewsElement = document.querySelector('.main-reviews');
 
-window.addEventListener("scroll", () => {
-    const a = reviewsElement.offsetTop + reviewsElement.clientHeight
-    reviewsElement.style.top = '-' + (reviewsElement.clientHeight - window.innerHeight + 100) + 'px';
-    if (a <= window.scrollY + window.innerHeight) {
-        mainNav.classList.add("hide");
-        reviewsElement.classList.add("main-reviews--scroll");
-    } else {
-        mainNav.classList.remove("hide");
-        reviewsElement.classList.remove("main-reviews--scroll");
-    }
-    mainNavLi.forEach(link => {
-        let section = document.querySelector(link.hash);
-        if (
-            section.offsetTop <= window.scrollY &&
-            section.offsetTop + section.offsetHeight > window.scrollY
-        ) {
-            link.classList.add("main-nav__item--active");
-        } else {
-            link.classList.remove("main-nav__item--active");
-        }
-    });
-    let section = document.querySelector('#first');
-    animateSymbols.isVisible = section.offsetTop <= window.scrollY &&
-        section.offsetTop + section.offsetHeight > window.scrollY;
-
-});
 
 //for Engineering culture
 const cultureItemArray = [...document.getElementsByClassName('main-culture__item')];
@@ -49,27 +19,7 @@ window.onscroll = () => {
 
 };
 
-//for show more reviews button
-if (window.innerWidth < 768) {
-    const reviews = [...document.getElementsByClassName("main-reviews__item")];
-    reviews.slice(3).map(review => {
-        review.style.display = 'none';
-    })
-}
 
-function showMoreReviews() {
-    const reviews = [...document.getElementsByClassName("main-reviews__item")];
-    reviews.slice(3).map(review => {
-        review.style.display = 'block';
-    })
-    if (reviews.slice(-1)[0].style.display === 'block') {
-        document.getElementsByClassName("main-reviews__more")[0].style.display = 'none';
-    }
-}
-
-//for scrollbar width
-const scrollbarWidth = window.innerWidth - document.body.clientWidth
-document.body.style.setProperty("--scrollbarWidth", `${scrollbarWidth}px`)
 
 //animate symbols
 const animateSymbols = {
@@ -117,6 +67,7 @@ const animateSymbols = {
         'l': '1',
         'j': '1',
         'u': '4',
+        'r': '7',
     },
 
     change_to: function(letters) {
@@ -184,22 +135,3 @@ const animateSymbols = {
 
 animateSymbols.init();
 
-const faces = [...document.querySelectorAll(".main-team__face")];
-faces.map(face => {
-    const video = face.querySelector("video");
-    const poster = face.querySelector(".main-team__face-poster");
-    video.addEventListener('mouseover', function() {
-        video.play();
-    });
-
-    video.addEventListener('mouseout', function() {
-        video.pause();
-        video.currentTime = 0;
-    });
-
-    video.addEventListener("progress", function() {
-        if (video.onprogress && Math.round(video.buffered.end(0)) / Math.round(seekableEnd) === 1) {
-            poster.style.display = 'none';
-        }
-    });
-})

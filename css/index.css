@@ -99,6 +99,7 @@
     color: var(--beige);
     grid-area: hero-text;
     white-space: nowrap;
+    margin-left: 150px;
 }
 
 .main-first__text {
@@ -161,6 +162,7 @@
         font-weight: 400;
         font-size: 70px;
         line-height: 76px;
+
     }
 }
 
@@ -182,12 +184,31 @@
         font-weight: 400;
         font-size: 42px;
         line-height: 48px;
+        margin-left: 0;
     }
     .main-first__text {
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
     }
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 200px;
 }
 
 .main-github {
@@ -214,12 +235,12 @@
     margin-right: 4px;
 }
 
-.main-github__block:nth-of-type(2) {
+/* .main-github__block:nth-of-type(2) {
     margin-left: 4px;
     border-left: none;
-}
+} */
 
-.main-github__block:nth-of-type(2):before {
+/* .main-github__block:nth-of-type(2):before {
     content: "";
     position: absolute;
     width: 8px;
@@ -227,7 +248,7 @@
     background-repeat: no-repeat;
     left: -4px;
     background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='24' viewBox='0 0 6 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_574_16' fill='white'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5 0C3.34315 0 2 1.34315 2 3V9.81818L0 12L2 14.1818V21C2 22.6569 3.34315 24 5 24H8V0H5Z'/%3E%3C/mask%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5 0C3.34315 0 2 1.34315 2 3V9.81818L0 12L2 14.1818V21C2 22.6569 3.34315 24 5 24H8V0H5Z' fill='%23CEC0AD'/%3E%3Cpath d='M2 9.81818L2.73715 10.4939L3 10.2072V9.81818H2ZM0 12L-0.737154 11.3243L-1.35657 12L-0.737154 12.6757L0 12ZM2 14.1818H3V13.7928L2.73715 13.5061L2 14.1818ZM8 24V25H9V24H8ZM8 0H9V-1H8V0ZM3 3C3 1.89543 3.89543 1 5 1V-1C2.79086 -1 1 0.790861 1 3H3ZM3 9.81818V3H1V9.81818H3ZM0.737154 12.6757L2.73715 10.4939L1.26285 9.14246L-0.737154 11.3243L0.737154 12.6757ZM2.73715 13.5061L0.737154 11.3243L-0.737154 12.6757L1.26285 14.8575L2.73715 13.5061ZM3 21V14.1818H1V21H3ZM5 23C3.89543 23 3 22.1046 3 21H1C1 23.2091 2.79086 25 5 25V23ZM8 23H5V25H8V23ZM7 0V24H9V0H7ZM5 1H8V-1H5V1Z' fill='%230C0C0C' mask='url(%23path-1-inside-1_574_16)'/%3E%3C/svg%3E%0A");
-}
+} */
 
 /*</editor-fold>*/
 

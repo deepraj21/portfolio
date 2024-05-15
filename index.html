@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Deepraj</title>
-    <meta name="description"
-        content="Exyte is a team of full-stack programmers and designers focused on mobile development, smart contract technology, and virtual reality.">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
@@ -13,41 +12,54 @@
     <link rel="stylesheet" href="./css/common.css">
     <style>
         .bg {
-            background: url('./img/banner2.png');
+            background: url('./img/background-img.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            /* background-position: center; */
+            background-position: center;
+            background-blend-mode: darken;
+            height: 1000px;
+            background-attachment: fixed;
+
+        }
+
+        .main-first {
+            position: absolute;
         }
 
         @media(max-width: 768px) {
             .bg {
                 background: none;
             }
+            .main-github{
+                margin-left: -45px;
+            }
+            
         }
 
         ::-webkit-scrollbar {
             display: none;
         }
     </style>
-
-
 </head>
 
-<body>
+<body onload="loadfun()">
+    <div id="loading"> <img src="https://i.pinimg.com/originals/4f/43/2d/4f432d9234988a5f33b26e0ba06bc6fe.gif" alt="Loading"></div>
 
     <!-- End Google Tag Manager (noscript) -->
-    <div class="bg" id="first">
-        <header id="site-header" style="margin-top:10px;">
-            <div class="header__logo" style="margin-left: 17px;">
+  
+    <div class="bg" id="home">
+        <header id="site-header">
+            <div class="header__logo">
                 <a class="header__logo-link" href="/">
                     <!-- <img  src="/img/logo-beige.svg" height="24" width="84" alt="logo"/> -->
-                    <p style="color:aliceblue;">DEEPRAJ </p>
+                    <p style="color:#cec0ad;">127.0.0.1</p>
                 </a>
             </div>
             <div class="header__menu">
-                <a class="header__menu-link" href="#first">Home</a>
+                <a class="header__menu-link" href="#home">> CLI</a>
                 <a class="header__menu-link" href="#repos">Projects</a>
-                <a class="header__menu-link" href="/contacts">Contacts</a>
+                <a class="header__menu-link" href="#profile">Profile</a>
+                <a class="header__menu-link" href="#blogs">Blogs</a>
                 <div style="flex-grow: 1;"></div>
 
             </div>
@@ -58,19 +70,19 @@
             </div>
         </header>
         <div class="main-first">
-            <a class="main-github main-first--invisible" href="https://github.com/deepraj21" target="_blank">
-                <div class="main-github__block">
-                    <img src="./img/github.svg" width="16" height="16" alt="github logo" />
-                    <div class="main-github__text">GITHUB</div>
-                </div>
-            </a>
+            <div class="main-github main-first--invisible" style="width: 450px; overflow: hidden;">
+                <!-- <img src="./img/banner1.png" alt="" height="400px"> -->
+                <iframe src="https://deepraj21.github.io/terminal/" frameborder="0" height="500px" width="450px"></iframe>
+            </div>
+
+
 
             <div class="main-first__hero-text">the best <br><span style="background-color: rgb(255, 255, 255);">ⓘ error
                     message</span><br>is the one that <br>never shows up</div>
-            <div class="main-first__text main-first--invisible">Hello there! I'm Deepraj, BTech student majoring in CS 💻 Engg at KIIT University.
+            <div class="main-first__text main-first--invisible">Don't like the Terminal? SCROLL DOWN to view the GUI.</div>
         </div>
     </div>
-    </div>
+    
     <div class="main-repos main-container" id="repos">
         <div class="main-repos__title"><span class="main__title-slash">//</span> Featured Project on my GitHub <a
                 class="main-repos__link main__title-link" href="https://github.com/exyte" target="_blank">Visit_   </a>
@@ -118,86 +130,96 @@
             </a>
         </div>
     </div>
-    <div class="main-culture main-container" id="culture">
+    <div class="main-culture main-container" id="profile">
         <div class="main-culture__line"></div>
-            <div class="main-culture__item">
-                <div class="custom-heading"><span class="main__title-slash">//</span> Profile Details</div>
-                <div class="main-culture__description">
-                    [<br>
-                    <span style="margin-left: 20px;">{</span><br>
-                    <span style="margin-left: 36px;">"name": <span style="color: #65878E;">"Deepraj
-                            Bera"</span>,</span><br>
-                    <span style="margin-left: 36px;">"age": <span style="color: #65878E;">"21"</span>,</span><br>
-                    <span style="margin-left: 36px;">"email": <a href="" style="color: #65878E;">"deepraj21.bera@gmail.com"</a>,</span> <br>
-                    <span style="margin-left: 36px;">"University": <span style="color: #65878E;">"KIIT Bhubaneswar"</span>,</span><br>
-                    <span style="margin-left: 36px;">"branch": <span style="color: #65878E;">"CSE"</span>,</span><br>
-                    <span style="margin-left: 36px;">"Resume: <a href="" download="" style="color: #65878E;">
-                            "personalCV2.pdf"</a></span><br>
-                    <span style="margin-left: 20px;">},</span><br>
-                    <span style="margin-left: 20px;">{</span><br>
-                    <span style="margin-left: 36px;">"github": <a href="https://github.com/deepraj21/" target="_blank" style="color: #65878E;">"deepraj21"</a>,</span><br>
-                    <span style="margin-left: 36px;">"linkedin": <a href="https://www.linkedin.com/in/deepraj-bera-b64996231/" target="_blank" style="color: #65878E;">"deepraj-bera-b64996231"</a>,</span><br>
-                    <span style="margin-left: 36px;">"leetocde": <a href="https://leetcode.com/u/user6281Sd/" target="_blank" style="color: #65878E;">"user6281Sd"</a>,</span> <br>
-                    <span style="margin-left: 36px;">"GFG": <a href="https://www.geeksforgeeks.org/user/deepraj21bera/" style="color: #65878E;">"deepraj21bera"</a>,</span><br>
-                    <span style="margin-left: 36px;">"Hackerrank": <a href="https://www.hackerrank.com/profile/deepraj21_bera" target="_blank" style="color: #65878E;">"deepraj21_bera"</a>,</span><br>
-                    <span style="margin-left: 36px;">"Instagram": <a href="https://www.instagram.com/its_deep.raj/" style="color: #65878E;">
-                            "its_deep.raj"</a></span><br>
-                    <span style="margin-left: 20px;">}</span><br>
-                    ]
-                </div>
-                <div class="main-culture__image">
-                    <img src="./img/culture/culture 1.png" alt="image" loading="lazy" width="390" height="290" />
-                </div>
-                <div class="main-culture__mobile-line"></div>
+        <div class="main-culture__item">
+            <div class="custom-heading"><span class="main__title-slash">//</span> Profile Details</div>
+            <div class="main-culture__description">
+                [<br>
+                <span style="margin-left: 20px;">{</span><br>
+                <span style="margin-left: 36px;">"name": <span style="color: #65878E;">"Deepraj
+                        Bera"</span>,</span><br>
+                <span style="margin-left: 36px;">"age": <span style="color: #65878E;">"21"</span>,</span><br>
+                <span style="margin-left: 36px;">"email": <a href=""
+                        style="color: #65878E;">"deepraj21.bera@gmail.com"</a>,</span> <br>
+                <span style="margin-left: 36px;">"University": <span style="color: #65878E;">"KIIT
+                        Bhubaneswar"</span>,</span><br>
+                <span style="margin-left: 36px;">"branch": <span style="color: #65878E;">"CSE"</span>,</span><br>
+                <span style="margin-left: 36px;">"Resume: <a href="" download="" style="color: #65878E;">
+                        "personalCV2.pdf"</a></span><br>
+                <span style="margin-left: 20px;">},</span><br>
+                <span style="margin-left: 20px;">{</span><br>
+                <span style="margin-left: 36px;">"github": <a href="https://github.com/deepraj21/" target="_blank"
+                        style="color: #65878E;">"deepraj21"</a>,</span><br>
+                <span style="margin-left: 36px;">"linkedin": <a
+                        href="https://www.linkedin.com/in/deepraj-bera-b64996231/" target="_blank"
+                        style="color: #65878E;">"deepraj-bera-b64996231"</a>,</span><br>
+                <span style="margin-left: 36px;">"leetocde": <a href="https://leetcode.com/u/user6281Sd/"
+                        target="_blank" style="color: #65878E;">"user6281Sd"</a>,</span> <br>
+                <span style="margin-left: 36px;">"GFG": <a href="https://www.geeksforgeeks.org/user/deepraj21bera/"
+                        style="color: #65878E;">"deepraj21bera"</a>,</span><br>
+                <span style="margin-left: 36px;">"Hackerrank": <a
+                        href="https://www.hackerrank.com/profile/deepraj21_bera" target="_blank"
+                        style="color: #65878E;">"deepraj21_bera"</a>,</span><br>
+                <span style="margin-left: 36px;">"Instagram": <a href="https://www.instagram.com/its_deep.raj/"
+                        style="color: #65878E;">
+                        "its_deep.raj"</a></span><br>
+                <span style="margin-left: 20px;">}</span><br>
+                ]
             </div>
+            <div class="main-culture__image">
+                <img src="./img/culture/culture 1.png" alt="image" loading="lazy" width="390" height="290" />
+            </div>
+            <div class="main-culture__mobile-line"></div>
+        </div>
     </div>
-    <div class="main-knowledge main-container" id="knowledge">
+    <div class="main-knowledge main-container" id="blogs">
         <div class="main-culture__line"></div>
         <div class="main-knowledge__title"><span class="main__title-slash">//</span> Blogs<a
                 class="main-knowledge__link main__title-link" href="/blog">see all_   </a></div>
         <div class="main-knowledge__items">
             <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;water-level-widget">
-                <div class="main-knowledge__icon"><img src="/img/memoji/AYudenkov.png" alt="icon" loading="lazy"
-                        width="24" height="24" /></div>
+                <div class="main-knowledge__icon"><img src="./img/profile.jpg" alt="icon" loading="lazy" width="24"
+                        height="24" /></div>
                 <div class="main-knowledge__text">Android Department • 11 Jan 2023</div>
                 <div class="main-knowledge__name">Jetpack Compose Tutorial: Water Level Widget</div>
                 <div class="main-knowledge__description">Replicating the depth gauge widget from Apple in Jetpack
                     Compose</div>
             </a>
             <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;swiftui-tutorial-scaling-header">
-                <div class="main-knowledge__icon"><img src="/img/memoji/NAfonasov.png" alt="icon" loading="lazy"
-                        width="24" height="24" /></div>
+                <div class="main-knowledge__icon"><img src="./img/profile.jpg" alt="icon" loading="lazy" width="24"
+                        height="24" /></div>
                 <div class="main-knowledge__text">iOS Department • 9 Jun 2022</div>
                 <div class="main-knowledge__name">SwiftUI Tutorial – Scaling Header</div>
                 <div class="main-knowledge__description">A scroll view with a sticky header which shrinks as you scroll.
                     Written with SwiftUI.</div>
             </a>
             <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;swiftui-tutorial-popupview-library">
-                <div class="main-knowledge__icon"><img src="/img/memoji/NAfonasov.png" alt="icon" loading="lazy"
-                        width="24" height="24" /></div>
+                <div class="main-knowledge__icon"><img src="./img/profile.jpg" alt="icon" loading="lazy" width="24"
+                        height="24" /></div>
                 <div class="main-knowledge__text">iOS Department • 1 Feb 2022</div>
                 <div class="main-knowledge__name">SwiftUI Tutorial — a simple interactive popup</div>
                 <div class="main-knowledge__description">Toast and popup library written in SwiftUI.</div>
             </a>
             <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;android-dribbble-replicating-part-5">
-                <div class="main-knowledge__icon"><img src="/img/memoji/SBobrishev.png" alt="icon" loading="lazy"
-                        width="24" height="24" /></div>
+                <div class="main-knowledge__icon"><img src="./img/profile.jpg" alt="icon" loading="lazy" width="24"
+                        height="24" /></div>
                 <div class="main-knowledge__text">Android Department • 20 Mar 2023</div>
                 <div class="main-knowledge__name">Jetpack Compose Tutorial: Improving Performance</div>
                 <div class="main-knowledge__description">Improving Jetpack Compose performance with Compose Compiler
                     Metrics</div>
             </a>
             <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;how-to-create-app-clips">
-                <div class="main-knowledge__icon"><img src="/img/memoji/DShipinev.png" alt="icon" loading="lazy"
-                        width="24" height="24" /></div>
+                <div class="main-knowledge__icon"><img src="./img/profile.jpg" alt="icon" loading="lazy" width="24"
+                        height="24" /></div>
                 <div class="main-knowledge__text">iOS Department • 26 Mar 2021</div>
                 <div class="main-knowledge__name">How to Create Widgets with WidgetKit</div>
                 <div class="main-knowledge__description">With WidgetKit The new WidgetKit framework made widgets more
                     accessible, interactive and increa...</div>
             </a>
             <a class="main-knowledge__item" target="_blank" href="&#x2F;blog&#x2F;how-to-create-app-clips">
-                <div class="main-knowledge__icon"><img src="/img/memoji/DShipinev.png" alt="icon" loading="lazy"
-                        width="24" height="24" /></div>
+                <div class="main-knowledge__icon"><img src="./img/profile.jpg" alt="icon" loading="lazy" width="24"
+                        height="24" /></div>
                 <div class="main-knowledge__text">iOS Department • 11 Feb 2020</div>
                 <div class="main-knowledge__name">How to Create App Clips</div>
                 <div class="main-knowledge__description">With the iOS 14 release Apple added a new way to experience
@@ -205,8 +227,18 @@
             </a>
         </div>
     </div>
+   
+    
     <script src="./js/index.js"></script>
     <script src="./js/common.js"></script>
+   
+    <script>on_load()</script>
+    <script>
+        var load = document.getElementById("loading");
+        function loadfun() {
+            load.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
