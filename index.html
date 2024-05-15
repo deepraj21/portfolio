@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Deepraj</title>
+    <title>deepraj-bera</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="icon" href="./img/Windows_Terminal_logo.svg.png">
     <style>
         .bg {
             background: url('./img/background-img.jpg');
@@ -22,35 +23,27 @@
 
         }
 
-        .main-first {
-            position: absolute;
-        }
-
         @media(max-width: 768px) {
-            .bg {
+            /* .bg {
                 background: none;
-            }
-            .main-github{
+            } */
+
+            .main-github {
                 width: 100px;
                 overflow: hidden;
             }
-            .main-first__hero-text{
+
+            .main-first__hero-text {
                 margin-left: 0;
             }
-            
-        }
 
-        ::-webkit-scrollbar {
-            display: none;
         }
     </style>
 </head>
 
-<body onload="loadfun()">
-    <div id="loading"> <img src="https://i.pinimg.com/originals/4f/43/2d/4f432d9234988a5f33b26e0ba06bc6fe.gif" alt="Loading"></div>
-
-    <!-- End Google Tag Manager (noscript) -->
-  
+<body onload="loadfun()" oncontextmenu="return false">
+    <div id="loading"> <img src="https://i.pinimg.com/originals/4f/43/2d/4f432d9234988a5f33b26e0ba06bc6fe.gif"
+            alt="Loading"></div>
     <div class="bg" id="home">
         <header id="site-header">
             <div class="header__logo">
@@ -70,67 +63,67 @@
             <div class="header__button-wrapper">
                 <button class="header__button header__button--mobile" onclick="showMobileMenu()">MENU</button>
                 <button class="header__button header__button--close" onclick="showMobileMenu()">CLOSE</button>
-                <!-- <button class="header__button header__button--desktop" onclick="showModal()">GET IN TOUCH</button> -->
+                <a class="header__button header__button--desktop" href="mailto:deepraj21.bera@gmail.com">GET IN
+                    TOUCH</a>
             </div>
         </header>
         <div class="main-first">
             <div class="main-github main-first--invisible" style="width: 450px; overflow: hidden;">
                 <!-- <img src="./img/banner1.png" alt="" height="400px"> -->
-                <iframe src="https://deepraj21.github.io/terminal/" frameborder="0" height="500px" width="450px"></iframe>
+                <iframe src="https://deepraj21.github.io/terminal/" frameborder="0" height="500px"
+                    width="450px"></iframe>
             </div>
 
 
 
-            <div class="main-first__hero-text">the best <br><span style="background-color: rgb(255, 255, 255);">ⓘ error
+            <div class="main-first__hero-text">the best <br><span style="background-color: rgb(255, 255, 255);">error
                     message</span><br>is the one that <br>never shows up</div>
-            <div class="main-first__text main-first--invisible">Don't like the Terminal? SCROLL DOWN to view the GUI.</div>
+            <div class="main-first__text main-first--invisible">Don't like the Terminal? SCROLL DOWN to view the GUI.
+            </div>
         </div>
     </div>
-    
+
     <div class="main-repos main-container" id="repos">
         <div class="main-repos__title"><span class="main__title-slash">//</span> Featured Project on my GitHub <a
                 class="main-repos__link main__title-link" href="https://github.com/exyte" target="_blank">Visit_   </a>
         </div>
         <div class="main-repos__list">
-            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;Macaw" target="_blank">
-                <div class="main-repos__name"><span>Macaw</span></div>
+            <a class="main-repos__item" href="" target="_blank">
+                <div class="main-repos__name"><span>NodeCraft</span></div>
                 <div class="main-repos__description">Powerful and easy-to-use vector graphics Swift library with SVG
                     support</div>
-                <div class="main-repos__stars">5,924</div>
-                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+                <div class="main-repos__react">React</div>
+                <div class="main-repos__lang main-repos__langchain">Langchain</div>
             </a>
-            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;PopupView" target="_blank">
-                <div class="main-repos__name"><span>PopupView</span></div>
+            <a class="main-repos__item" href="" target="_blank">
+                <div class="main-repos__name"><span>JanSevak</span></div>
                 <div class="main-repos__description">Toasts and popups library written with SwiftUI</div>
-                <div class="main-repos__stars">2,374</div>
-                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+                <div class="main-repos__python">Python</div>
+                <div class="main-repos__lang main-repos__sqlite">Sqlite3</div>
             </a>
-            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;SVGView" target="_blank">
-                <div class="main-repos__name"><span>SVGView</span></div>
+            <a class="main-repos__item" href="" target="_blank">
+                <div class="main-repos__name"><span>Motion</span></div>
                 <div class="main-repos__description">SVG parser and renderer written in SwiftUI</div>
-                <div class="main-repos__stars">382</div>
-                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+                <div class="main-repos__stars">React</div>
+                <div class="main-repos__lang main-repos__typescript">Typescipt</div>
             </a>
-            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;Grid" target="_blank">
-                <div class="main-repos__name"><span>Grid</span></div>
+            <a class="main-repos__item" href="" target="_blank">
+                <div class="main-repos__name"><span>DecisionHub</span></div>
                 <div class="main-repos__description">The most powerful Grid container missed in SwiftUI</div>
-                <div class="main-repos__stars">1,404</div>
-                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+                <div class="main-repos__python">Python</div>
+                <div class="main-repos__lang main-repos__sqlite">Sqlite3</div>
             </a>
-            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;ActivityIndicatorView"
-                target="_blank">
-                <div class="main-repos__name"><span>ActivityIndicatorView</span></div>
+            <a class="main-repos__item" href="" target="_blank">
+                <div class="main-repos__name"><span>PredictBay</span></div>
                 <div class="main-repos__description">A number of preset loading indicators created with SwiftUI</div>
-                <div class="main-repos__stars">1,107</div>
-                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+                <div class="main-repos__python">Python</div>
+                <!-- <div class="main-repos__lang main-repos__lang--swift">swift</div> -->
             </a>
-            <a class="main-repos__item" href="https:&#x2F;&#x2F;github.com&#x2F;exyte&#x2F;ScalingHeaderScrollView"
-                target="_blank">
-                <div class="main-repos__name"><span>ScalingHeaderScrollView</span></div>
-                <div class="main-repos__description">A scroll view with a sticky header which shrinks as you scroll.
-                    Written with SwiftUI</div>
-                <div class="main-repos__stars">602</div>
-                <div class="main-repos__lang main-repos__lang--swift">swift</div>
+            <a class="main-repos__item" href="" target="_blank">
+                <div class="main-repos__name"><span>Neuroscan</span></div>
+                <div class="main-repos__description"></div>
+                <div class="main-repos__python">Python</div>
+                <!-- <div class="main-repos__lang main-repos__lang--swift">swift</div> -->
             </a>
         </div>
     </div>
@@ -138,19 +131,20 @@
         <div class="main-culture__line"></div>
         <div class="main-culture__item">
             <div class="custom-heading"><span class="main__title-slash">//</span> Profile Details</div>
-            <div class="main-culture__description">
+            <div class="main-culture__description" style="margin-top: -40px;">
                 [<br>
                 <span style="margin-left: 20px;">{</span><br>
                 <span style="margin-left: 36px;">"name": <span style="color: #65878E;">"Deepraj
                         Bera"</span>,</span><br>
                 <span style="margin-left: 36px;">"age": <span style="color: #65878E;">"21"</span>,</span><br>
-                <span style="margin-left: 36px;">"email": <a href=""
+                <span style="margin-left: 36px;">"email": <a href="mailto:deepraj21.bera@gmail.com"
                         style="color: #65878E;">"deepraj21.bera@gmail.com"</a>,</span> <br>
                 <span style="margin-left: 36px;">"University": <span style="color: #65878E;">"KIIT
                         Bhubaneswar"</span>,</span><br>
                 <span style="margin-left: 36px;">"branch": <span style="color: #65878E;">"CSE"</span>,</span><br>
-                <span style="margin-left: 36px;">"Resume: <a href="" download="" style="color: #65878E;">
-                        "personalCV2.pdf"</a></span><br>
+                <span style="margin-left: 36px;">"Resume: <a href="" download=""
+                        style="color: #65878E;">"personalCV2.pdf"</a>,</span><br>
+                <span style="margin-left: 36px;">"Location: <span style="color: #65878E;">"Kolkata"</span></span><br>
                 <span style="margin-left: 20px;">},</span><br>
                 <span style="margin-left: 20px;">{</span><br>
                 <span style="margin-left: 36px;">"github": <a href="https://github.com/deepraj21/" target="_blank"
@@ -172,7 +166,7 @@
                 ]
             </div>
             <div class="main-culture__image">
-                <img src="./img/culture/culture 1.png" alt="image" loading="lazy" width="390" height="290" />
+                <img src="./img/culture/culture 1.png" alt="image" loading="lazy" width="100" height="190" />
             </div>
             <div class="main-culture__mobile-line"></div>
         </div>
@@ -231,11 +225,14 @@
             </a>
         </div>
     </div>
-   
-    
+    <div class="main-footer">
+        <div class="main-footer__call-to-action"></div>
+    </div>
+
+
     <script src="./js/index.js"></script>
     <script src="./js/common.js"></script>
-   
+
     <script>on_load()</script>
     <script>
         var load = document.getElementById("loading");
