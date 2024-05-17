@@ -1,26 +1,3 @@
-
-
-//for Engineering culture
-const cultureItemArray = [...document.getElementsByClassName('main-culture__item')];
-
-window.onscroll = () => {
-    if (window.innerWidth >= 768) {
-        if ((cultureItemArray[0].offsetTop - cultureItemArray[1].offsetTop > -400) || (cultureItemArray[1].offsetTop - cultureItemArray[2].offsetTop > -100)) {
-            cultureItemArray[0].classList.add('main-culture__item--out')
-        } else {
-            cultureItemArray[0].classList.remove('main-culture__item--out')
-        }
-        if (cultureItemArray[1].offsetTop - cultureItemArray[2].offsetTop >= -300) {
-            cultureItemArray[1].classList.add('main-culture__item--out')
-        } else {
-            cultureItemArray[1].classList.remove('main-culture__item--out')
-        }
-    }
-
-};
-
-
-
 //animate symbols
 const animateSymbols = {
     texts: document.querySelector(".main-first__hero-text").innerText,
