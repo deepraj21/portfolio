@@ -4,6 +4,8 @@
         if (direction === 2 && curScroll > 92) { //replace 92 with the height of your header in px
             header.classList.add('hide');
             prevDirection = direction;
+            // Close the menu when scrolling down
+            closeMobileMenu();
         } else if (direction === 1) {
             header.classList.remove('hide');
             prevDirection = direction;
@@ -49,6 +51,14 @@ function showMobileMenu() {
     const siteHeader = document.getElementById('site-header')
     siteHeader.classList.toggle("header-mobile");
 }
+
+// Close the mobile menu
+function closeMobileMenu() {
+    const siteHeader = document.getElementById('site-header')
+    siteHeader.classList.remove("header-mobile");
+}
+
+
 
 console.log(
 `
