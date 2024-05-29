@@ -366,11 +366,11 @@
 
 /*<editor-fold desc="Main Repos">*/
 
-.main-repos {
+.projects {
     padding-top: 100px;
 }
 
-.main-repos__title {
+.projects__title {
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
@@ -380,7 +380,7 @@
     margin-bottom: 60px;
 }
 
-.main-repos__list {
+.projects__list {
     grid-area: list;
     display: grid;
     grid-template-columns: repeat(2, 555px);
@@ -388,7 +388,7 @@
     border-radius: 2px;
 }
 
-.main-repos__item {
+.projects__item {
     display: grid;
     grid-template-areas: 'name name' 'description description' 'stars lang';
     grid-template-columns: 120px auto;
@@ -397,15 +397,15 @@
     grid-template-rows: min-content auto auto;
 }
 
-.main-repos__item:nth-of-type(2n) {
+.projects__item:nth-of-type(2n) {
     border-left: 1px solid var(--gray2);
 }
 
-.main-repos__item:nth-of-type(n+3) {
+.projects__item:nth-of-type(n+3) {
     border-top: 1px solid var(--gray2);
 }
 
-.main-repos__name {
+.projects__name {
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
@@ -414,16 +414,16 @@
     grid-area: name;
 }
 
-.main-repos__name span {
+.projects__name span {
     display: inline;
     border-bottom: 1px solid transparent;
 }
 
-.main-repos__item:hover .main-repos__name span {
+.projects__item:hover .projects__name span {
     border-color: var(--beige);
 }
 
-.main-repos__description {
+.projects__description {
     font-family: 'IBM Plex Mono', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -435,7 +435,7 @@
     opacity: 0.8;
 }
 
-.main-repos__typescript {
+.projects__typescript {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -446,7 +446,7 @@
     margin-left: 24px;
 }
 
-.main-repos__typescript::before {
+.projects__typescript::before {
     content: "";
     background-image: url('../img/techstack/typescript.png');
     background-size: 20px;
@@ -459,7 +459,7 @@
     margin-top: 2px;
 }
 
-.main-repos__sqlite {
+.projects__sqlite {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -470,7 +470,7 @@
     margin-left: 24px;
 }
 
-.main-repos__sqlite::before {
+.projects__sqlite::before {
     content: "";
     background-image: url('../img/techstack/Sqlite.png');
     background-size: 20px;
@@ -483,7 +483,7 @@
     margin-top: 6px;
 }
 
-.main-repos__langchain {
+.projects__langchain {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -494,7 +494,7 @@
     margin-left: 24px;
 }
 
-.main-repos__langchain::before {
+.projects__langchain::before {
     content: "";
     background-image: url('../img/techstack/langchain.png');
     background-size: 20px;
@@ -507,7 +507,7 @@
     margin-top: 6px;
 }
 
-.main-repos__python {
+.projects__python {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -518,7 +518,7 @@
     margin-left: 24px;
 }
 
-.main-repos__python::before {
+.projects__python::before {
     content: "";
     background-image: url('../img/techstack/python.png');
     background-size: 15px;
@@ -531,7 +531,7 @@
     margin-top: 3px;
 }
 
-.main-repos__react {
+.projects__react {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -542,7 +542,7 @@
     margin-left: 24px;
 }
 
-.main-repos__react::before {
+.projects__react::before {
     content: "";
     background-image: url('../img/techstack/react.png');
     background-size: 15px;
@@ -555,7 +555,7 @@
     margin-top: 3px;
 }
 
-.main-repos__stars {
+.projects__stars {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -566,7 +566,7 @@
     margin-left: 24px;
 }
 
-.main-repos__stars::before {
+.projects__stars::before {
     content: "";
     background-image: url('../img/techstack/react.png');
     background-size: 15px;
@@ -579,7 +579,7 @@
     margin-top: 3px;
 }
 
-.main-repos__lang {
+.projects__lang {
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -589,7 +589,7 @@
     grid-area: lang;
 }
 
-.main-repos__lang--swift::before {
+.projects__lang--swift::before {
     content: "";
     background-image: url('../img/swift.png');
     position: absolute;
@@ -601,57 +601,57 @@
 }
 
 @media (max-width: 1210px) {
-    .main-repos {
+    .projects {
         padding-top: 0;
         max-width: 768px;
         padding-left: 16px;
         padding-right: 16px;
     }
-    .main-repos__title {
+    .projects__title {
         font-size: 32px;
         line-height: 42px;
         margin-bottom: 40px;
         padding-left: 16px;
     }
-    .main-repos__link {
+    .projects__link {
         margin-left: 20px;
     }
-    .main-repos__list {
+    .projects__list {
         grid-template-columns: repeat(2, 368px);
     }
-    .main-repos__name {
+    .projects__name {
         font-size: 20px;
         line-height: 30px;
     }
 }
 
 @media (max-width: 766px) {
-    .main-repos {
+    .projects {
         max-width: 375px;
         padding-left: 8px;
         padding-right: 8px;
     }
-    .main-repos__title {
+    .projects__title {
         margin-bottom: 32px;
         margin-left: 16px;
         padding-left: 0;
     }
-    .main-repos__link {
+    .projects__link {
         margin-left: 8px;
     }
-    .main-repos__list {
+    .projects__list {
         grid-template-columns: 358px;
     }
-    .main-repos__item {
+    .projects__item {
         padding: 24px 22px;
     }
-    .main-repos__item:nth-of-type(2n) {
+    .projects__item:nth-of-type(2n) {
         border-left: 1px solid var(--gray2);
     }
-    .main-repos__item:nth-of-type(n+1) {
+    .projects__item:nth-of-type(n+1) {
         border-top: 1px solid var(--gray2);
     }
-    .main-repos__name {
+    .projects__name {
         font-size: 20px;
         line-height: 30px;
     }
