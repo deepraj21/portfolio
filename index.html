@@ -25,6 +25,10 @@
 
         }
 
+        .open_source {
+            margin-top: 80px;
+        }
+
         @media(max-width: 768px) {
 
             .main-github {
@@ -43,7 +47,9 @@
                 margin-bottom: -80px;
             }
 
-
+            .open_source {
+                margin-top: 50px;
+            }
         }
     </style>
 </head>
@@ -65,7 +71,6 @@
                 <a class="header__menu-link" href="#achievements">Achievements</a>
                 <a class="header__menu-link" href="#blogs">Knowledge-Base</a>
                 <div style="flex-grow: 1;"></div>
-
             </div>
             <div class="header__button-wrapper">
                 <a href="mailto:deepraj21.bera@gmail.com"
@@ -100,6 +105,22 @@
             <div class="main-first__text main-first--invisible">Don't like the Terminal? <a href="#repos"
                     style="color:#dfcfb7; text-decoration:underline;">SCROLL DOWN</a> to view the GUI.
             </div>
+        </div>
+    </div>
+
+    <div class="open_source main-container" id="open_source">
+        <div class="projects__title"><span class="main__title-slash">//</span> Open Source Projects <a
+                class="projects__link main__title-link" href="https://github.com/deepraj21" target="_blank">Visit_   </a>
+        </div>
+        <div class="projects__list">
+            <a class="projects__item" href="https://github.com/devhub-ai/devhub" target="_blank">
+                <div class="projects__name"><span>DevHub</span></div>
+                <div class="projects__description">Platform to connect developers through graph technology and LLM with post, projects, chat and much more features.</div>
+            </a>
+            <a class="projects__item" href="https://github.com/devhub-ai/devbots" target="_blank">
+                <div class="projects__name"><span>DevBots</span></div>
+                <div class="projects__description">NPM/CLI for embedding prompted chatbots, supports SDKs and SAAS platform for building no code chatbot in 30sec.</div>
+            </a>
         </div>
     </div>
 
@@ -445,10 +466,22 @@
         </div>
     </div>
     <div class="main-footer">
-        <div class="main-footer__call-to-action"></div>
+        <div class="main-footer__call-to-action" style="display: flex; flex-direction: row; justify-content:center; padding-top: 20px;">
+            <div class="footer__logo">
+                <a class="footer__logo-link" href="#home">
+                    <p style="color:#cec0ad;">127.0.0.1</p>
+                </a>
+            </div>
+            <div class="footer__copyright" style="display: flex; justify-content: center; align-items: center; padding-left: 5px; padding-right: 5px;">
+                ©
+            </div>
+            <div class="header__button-wrapper">
+                <a class="header__button header__button--desktop" href="mailto:deepraj21.bera@gmail.com">GET IN
+                    TOUCH</a>
+            </div>
+        </div>
     </div>
-
-
+    <div style="height: 20px;"></div>
     <script src="./js/index.js"></script>
     <script src="./js/common.js"></script>
 

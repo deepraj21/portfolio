@@ -68,8 +68,7 @@ console.log(
 ██║  ██║██╔══╝  ██╔══╝  ██╔═══╝ ██╔══██║██╔══██║██   ██║
 ██████╔╝███████╗███████╗██║     ██║  ██║██║  ██║╚█████╔╝
 ╚═════╝ ╚══════╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚════╝
-hello guys.
-No need to download the source code using Resource Saver or something else 😂
-here is the link of the source code :- https://github.com/deepraj21/portfolio
+hello buddy, 
+so what are you doing at your Console today?
 `
 );
